@@ -84,7 +84,7 @@ var a[4]int
 b := [...]int{19:1}
 ```
 type SliceHeader struct {Data uintptr;Len  int;Cap int}
-type StringHeader struct{Data uintptr;Len int}
+type StringHeader struct{Data uintptr;Len int} .
 Data point to an array.
 
 
