@@ -76,3 +76,6 @@ func main() {
 }
 ```
 
+2)atomic.Value provides an atomic load and store of a consistently typed value.It's more efficient than using sync.Mutex.Key methods is Load and Store.
+
+
