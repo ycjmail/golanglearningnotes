@@ -78,4 +78,15 @@ func main() {
 
 2)atomic.Value provides an atomic load and store of a consistently typed value.It's more efficient than using sync.Mutex.Key methods is Load and Store.
 
+###### **3** Array slice string
+Array is building block of slice and string.
+```
+var a[4]int
+b := [...]int{19:1}
+```
+type SliceHeader struct {Data uintptr;Len  int;Cap int}
+type StringHeader struct{Data uintptr;Len int}
+Data point to a array.
+
+
 
