@@ -40,8 +40,7 @@ return builder.String()
 }`
 
 ###### **3** Concurrency
-1)
-sync.Pool's purpose is to cache allocated but unused items for later reuse, relieving pressure on the garbage collector. That is, it makes it easy to build efficient, thread-safe free lists. However, it is not suitable for all free lists.
+1)sync.Pool's purpose is to cache allocated but unused items for later reuse, relieving pressure on the garbage collector. That is, it makes it easy to build efficient, thread-safe free lists. However, it is not suitable for all free lists.
 New,Get,Put,demo:
 
 ```
@@ -86,7 +85,7 @@ b := [...]int{19:1}
 ```
 type SliceHeader struct {Data uintptr;Len  int;Cap int}
 type StringHeader struct{Data uintptr;Len int}
-Data point to a array.
+Data point to an array.
 
 
 
