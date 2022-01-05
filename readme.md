@@ -29,3 +29,12 @@ to look at the goroutine blocking profile, after calling runtime.SetBlockProfile
 to look at the goroutine mutexes profile, after calling runtime.SetMutexProfileFraction in your program:
 `go tool pprof -http=:1234 http://:9999/debug/pprof/mutex
 `
+
+###### **2** when concatenating string,strings.Builder.WriteString is more efficient than plus +. demo
+`func builderConcat(n int, str string) string {
+var builder strings.Builder
+for i := 0; i < n; i++ {
+builder.WriteString(str)
+}
+return builder.String()
+}`
