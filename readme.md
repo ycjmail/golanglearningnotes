@@ -78,7 +78,7 @@ func main() {
 2)atomic.Value provides an atomic load and store of a consistently typed value.It's more efficient than using sync.Mutex.Key methods is Load and Store.
 
 ###### **3** Array slice string
-Array is building block of slice and string.
+Array is building block of slice and string.Array length is fixed.When array length is not long enough to hold data for slice,a new array will be allocated. 
 ```
 var a[4]int
 b := [...]int{19:1}
